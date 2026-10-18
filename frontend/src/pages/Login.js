@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://online-store-rho-smoky.vercel.app//api/auth/login', formData);
+      const res = await axios.post('https://online-store-rho-smoky.vercel.app/api/auth/login', formData);
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('user', JSON.stringify(res.data.user));
       alert('Login Berhasil!');

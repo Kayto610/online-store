@@ -12,7 +12,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://https://online-store-rho-smoky.vercel.app//api/auth/register', formData);
+      await axios.post('https://online-store-rho-smoky.vercel.app/api/auth/register', formData);
       alert('Registrasi Berhasil! Silakan Login.');
       navigate('/login');
     } catch (err) {
